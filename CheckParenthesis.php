@@ -1,5 +1,13 @@
 <?php
 
+/**
+ * Функция проверки правильности расстановок скобок в тексте
+ * в проверку включены следующие проверки:
+ *   Лишние скобки
+ *   Закрывающаяся скобка в начале
+ *   Открывающаяся скобка в конце
+ */
+
 const OPEN_PARENTHESIS = '(';
 const CLOSE_PARENTHESIS = ')';
 
@@ -52,4 +60,4 @@ function checkParenthesis(string $str): bool
     return  ($openCounter === $closeCounter);
 }
 
-echo (checkParenthesis($test_1) ? "YES" : "NOT") . "\n";
+echo (checkParenthesis($test_1) ? "YES" : "NOT") . PHP_EOL;
