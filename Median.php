@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 $test1 = [1, 5, 12];
 $test2 = [26, 30, 22];
 
